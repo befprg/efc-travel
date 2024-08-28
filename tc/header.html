@@ -1,0 +1,73 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <!-- Logo on the left (never collapses) -->
+            <a class="navbar-brand" href="index.html" target="_self">
+                <img src="../static/images/logo.webp" alt="Logo">
+            </a>
+
+            <div class="d-flex order-md-last">
+                <!-- buttons on the right -->
+                <div class="d-flex ms-auto">
+                    <div class="d-inline-block me-2">
+                        <button id="colorModeButton" type="button" class="btn nav-button">
+                            <i class="bi bi-lightbulb"></i>
+                        </button>
+                    </div>
+                    <div class="dropdown d-inline-block me-2">
+                        <button type="button" class="btn dropdown-toggle dropdown-arrow-none nav-button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-translate"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a id="enLangButton" class="dropdown-item font-en" href="../en/index.html">EN</a></li>
+                            <li><a id="scLangButton" class="dropdown-item font-sc" href="../sc/index.html">簡</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Navigation items in the middle (collapse to right most toggler) -->
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="visually-hidden">表單</span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" data-title="首頁">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html" data-title="關於我們">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-wrap dropdown-arrow-none" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false" data-title="旅遊目的地">
+                            旅遊目的地
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="aegean-sea-santorini-greek.html"
+                                    data-title="愛琴海 / 聖托里尼 / 希臘">愛琴海 / 聖托里尼 / 希臘</a>
+                            </li>
+                            <li><a class="dropdown-item" href="eiffel-tower-paris-france.html"
+                                    data-title="艾菲爾鐵塔 / 巴黎 / 法國">艾菲爾鐵塔 / 巴黎 / 法國</a></li>
+                            <li><a class="dropdown-item" href="golden-gate-bridge.html"
+                                    data-title="金門大橋 / 三藩市 / 美國">金門大橋 / 三藩市 / 美國</a></li>
+                            <li><a class="dropdown-item" href="great-pyramids-giza-egypt.html"
+                                    data-title="吉薩金字塔 / 吉薩 / 埃及">吉薩金字塔 / 吉薩 / 埃及</a>
+                            </li>
+                            <li><a class="dropdown-item" href="hot-air-balloon-ride-cappadocia-turkey.html"
+                                    data-title="熱氣球之旅 / 卡帕多奇亞 / 土耳其">熱氣球之旅 / 卡帕多奇亞 / 土耳其</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-wrap" href="contact.html" data-title="聯繫我們">聯繫我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

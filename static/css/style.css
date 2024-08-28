@@ -1,0 +1,208 @@
+/* default style */
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+html[lang="en"] body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+html[lang="zh-sc"] body {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+html[lang="zh-tc"] body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.font-en {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+.font-tc {
+  font-family: "Noto Sans TC", sans-serif !important;
+}
+
+.font-sc {
+  font-family: "Noto Sans SC", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.navbar {
+  min-height: 100px;
+}
+
+.navbar li {
+  font-size: 1.25rem;
+}
+
+.navbar-brand > img {
+  width: auto;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-toggler {
+  justify-items: center;
+  padding: 0;
+  color: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.dropdown-arrow-none:after {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+/* end of default style*/
+
+/* breadcrumb */
+.breadcrumb {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  --bs-breadcrumb-divider: ">";
+}
+
+.breadcrumb-item {
+  font-size: 12px;
+  /* color: #a6a8ab; */
+}
+
+.breadcrumb-item.has-href a {
+  /* color: #a6a8ab; */
+}
+
+.breadcrumb-item.active {
+  /* color: #0088a5; */
+}
+/* end of breadcrumb */
+
+/* carousel for hero */
+.carousel-inner {
+  max-height: 600px;
+  border-radius: 20px;
+}
+
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #fff, 0 0 30px #bf9a33,
+      0 0 40px #bf9a33, 0 0 50px #bf9a33;
+  }
+  to {
+    text-shadow: 0 0 20px #000, 0 0 30px #fece43, 0 0 40px #fece43,
+      0 0 50px #fece43, 0 0 60px #fece43;
+  }
+}
+/* end of carousel for hero */
+
+/* landscape phones */
+@media only screen and (max-width: 575px) {
+  .navbar-brand img {
+    max-height: 36px;
+  }
+
+  .dropdown-item {
+    white-space: normal;
+    max-width: 95vw;
+  }
+
+  .breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-brand img {
+    max-height: 36px;
+  }
+}
+
+/* xs devices, portrait phones */
+@media only screen and (max-width: 449px) {
+  .navbar-brand img {
+    max-height: 30px;
+  }
+}
+
+/* large phones, portrait tablets */
+@media only screen and (min-width: 576px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  footer {
+    min-height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .navbar-brand img {
+    max-height: 42px;
+  }
+}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-brand img {
+    max-height: 48px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 992px) {
+  .navbar-brand img {
+    max-height: 54px;
+  }
+
+  .navbar-nav {
+    gap: 30px;
+  }
+}
+
+/* desktop hd */
+@media only screen and (min-width: 1200px) {
+  .navbar-brand img {
+    max-height: 60px;
+  }
+
+  .navbar-nav {
+    gap: 40px;
+  }
+}

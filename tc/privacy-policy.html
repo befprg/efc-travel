@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-tc" data-bs-theme="light">
+
+<head>
+    <title>私隱政策 | EFC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <header id="header-container">
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container">
+            <section class="mb-5">
+                <h2>私隱政策</h2>
+                <p>歡迎來到我們的旅遊小貼士部落格！我們致力於保護您的私隱。本私隱政策說明了您在訪問我們的網站時，我們如何收集、使用和保護您的個人信息。</p>
+            </section>
+
+            <section class="mb-5">
+                <h3>我們收集的信息</h3>
+                <ul>
+                    <li>
+                        個人信息： 當您訂閱我們的通訊、留下評論或與我們的網站互動時，我們可能會收集您的個人信息，例如您的姓名、電子郵件地址和所在地。
+                    </li>
+                    <li>
+                        使用數據： 我們自動收集有關您與我們網站的互動的信息，包括您的IP地址、瀏覽器類型和訪問的頁面。
+                    </li>
+                </ul>
+            </section>
+
+            <section class="mb-5">
+                <h3>我們如何使用您的信息</h3>
+                <p>我們使用您的信息用於以下目的：</p>
+                <ul>
+                    <li>
+                        溝通： 向您發送通訊、更新並回答您的詢問。
+                    </li>
+                    <li>
+                        分析： 分析網站流量並改進我們的內容。
+                    </li>
+                </ul>
+            </section>
+
+            <section class="mb-5">
+                <h3>Cookies</h3>
+                <p>我們使用Cookies來增強您的瀏覽體驗。如果您希望，您可以調整瀏覽器設置以禁用Cookies。</p>
+            </section>
+
+            <section class="mb-5">
+                <h3>第三方鏈接</h3>
+                <p>我們的網站可能包含指向第三方網站的鏈接。請查閱其私隱政策，因為我們不對其做法負責。</p>
+            </section>
+
+            <section class="mb-5">
+                <h3>數據安全</h3>
+                <p>我們嚴肅對待數據安全，並實施措施來保護您的信息。但是，互聯網上的傳輸方法並不完全安全。</p>
+            </section>
+
+            <section class="mb-5">
+                <h3>本私隱政策的更改</h3>
+                <p>我們可能會定期更新本私隱政策。請查看此頁面以獲取任何更改。</p>
+            </section>
+
+            <section class="mb-5">
+                <h3>聯繫我們</h3>
+                <p>如果您對我們的私隱政策有任何疑問或擔憂，請隨時聯繫我們 <a class="privacy-email" href="#"></a>。</p>
+            </section>
+        </div>
+    </main>
+    <footer id="footer-container">
+        <!-- place footer here -->
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="../static/js/app.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            initMainAfterLoad();
+
+            const headerContainer = document.getElementById('header-container');
+            fetch('header.html')
+                .then(response => response.text())
+                .then((html) => {
+                    headerContainer.innerHTML = html;
+                    initHeaderAfterLoad();
+                });
+
+            const footerContainer = document.getElementById('footer-container');
+            fetch('footer.html')
+                .then(response => response.text())
+                .then((html) => {
+                    footerContainer.innerHTML = html;
+                    initFooterAfterLoad();
+                });
+        });
+    </script>
+</body>
+
+</html>
