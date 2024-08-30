@@ -32,8 +32,8 @@ This project showcases the following key features and technologies:
 
 * Language selection available via path, supporting:
   * English (en)
-  * Traditional Chinese (zh-tc / tc)
-  * Simplified Chinese (zh-sc / sc)
+  * Traditional Chinese (zh-hant / tc)
+  * Simplified Chinese (zh-hans / sc)
 
 ### Ease Maintenance
 

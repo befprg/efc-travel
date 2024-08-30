@@ -8,11 +8,11 @@ html[lang="en"] body {
   font-family: "Noto Sans", sans-serif;
 }
 
-html[lang="zh-sc"] body {
+html[lang="zh-hans"] body {
   font-family: "Noto Sans SC", sans-serif;
 }
 
-html[lang="zh-tc"] body {
+html[lang="zh-hant"] body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
