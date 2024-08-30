@@ -35,6 +35,11 @@ This project showcases the following key features and technologies:
   * Traditional Chinese (zh-hant / tc)
   * Simplified Chinese (zh-hans / sc)
 
+### SEO
+
+* Apply basic Open Graph meta tags
+* Use semantic HTML5 elements for improved accessibility
+
 ### Ease Maintenance
 
 * Shared header section and footer section per language
